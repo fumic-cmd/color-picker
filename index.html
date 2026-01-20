@@ -1,28 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>色ピッカー プライバシーポリシー</title>
-<style>
-body { font-family: sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.7; padding: 0 20px; }
-h1 { font-size: 28px; }
-h2 { margin-top: 32px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Color Map - プライバシーポリシー</title>
+  <style>
+    :root{
+      --bg:#F4F5F7;
+      --card:#FFFFFF;
+      --text:#0E1B2A;
+      --muted:#5A6676;
+      --primary:#173A57;
+
+      /* Brand gradient */
+      --g1:#EE9977;
+      --g2:#EE88AA;
+      --g3:#BB77CC;
+      --g4:#7788CC;
+      --g5:#5599DD;
+
+      --border:rgba(14,27,42,.10);
+      --shadow:0 12px 30px rgba(14,27,42,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+        "Hiragino Sans","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 10% 10%, rgba(85,153,221,.12), transparent 60%),
+        radial-gradient(900px 600px at 90% 15%, rgba(238,136,170,.14), transparent 55%),
+        radial-gradient(900px 600px at 92% 92%, rgba(187,119,204,.16), transparent 55%),
+        var(--bg);
+      line-height:1.75;
+    }
+    header{
+      padding:38px 16px 18px;
+      text-align:center;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      background: rgba(255,255,255,.75);
+      border:1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg,
+        var(--g1) 0%,
+        var(--g2) 20%,
+        var(--g3) 45%,
+        var(--g4) 68%,
+        var(--g5) 100%
+      );
+    }
+    h1{
+      margin:14px 0 6px;
+      font-size:22px;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+    main{
+      max-width:920px;
+      margin:0 auto;
+      padding:16px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+      margin:14px 0;
+    }
+    h2{
+      font-size:16px;
+      margin:0 0 10px;
+      color:var(--primary);
+    }
+    p{margin:8px 0;}
+    .note{
+      color:var(--muted);
+      font-size:13px;
+    }
+    footer{
+      padding:22px 16px 40px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <div class="brand" aria-label="My Color Map">
+      <span class="dot" aria-hidden="true"></span>
+      <strong>My Color Map</strong>
+    </div>
+    <h1>プライバシーポリシー</h1>
+    <p class="subtitle">Privacy Policy</p>
+  </header>
 
-<h1>プライバシーポリシー</h1>
+  <main>
 
-<p>色ピッカー（以下「本アプリ」）は、ユーザーの個人情報を収集・保存・第三者へ提供することはありません。</p>
+    <section class="card">
+      <h2>基本方針</h2>
+      <p>
+        My Color Map（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、
+        個人情報の収集・保存・第三者への提供を行いません。
+      </p>
+    </section>
 
-<h2>■ カメラ・写真へのアクセスについて</h2>
-<p>本アプリでは色を抽出するためにカメラおよび写真フォルダへアクセスしますが、取得したデータは端末内でのみ処理され、外部サーバへ送信されることはありません。</p>
+    <section class="card">
+      <h2>カメラ・写真へのアクセスについて</h2>
+      <p>
+        本アプリでは、色を抽出・分析する目的で、カメラおよび写真ライブラリへのアクセスを行います。
+      </p>
+      <p>
+        取得した画像データは端末内でのみ処理され、外部サーバーへ送信されることはありません。
+      </p>
+    </section>
 
-<h2>■ 個人情報の収集について</h2>
-<p>本アプリは、氏名・住所・メールアドレスなど、個人を特定できる情報を収集しません。</p>
+    <section class="card">
+      <h2>個人情報の収集について</h2>
+      <p>
+        本アプリは、氏名・住所・メールアドレス・位置情報など、
+        個人を特定できる情報を収集しません。
+      </p>
+      <p>
+        マイカラーや分析結果などのデータは、すべて端末内に保存されます。
+      </p>
+    </section>
 
-<h2>■ 広告・解析ツールについて</h2>
-<p>本アプリでは広告配信・解析ツールを使用していません。</p>
+    <section class="card">
+      <h2>広告・解析ツールについて</h2>
+      <p>
+        本アプリでは、広告配信サービスやアクセス解析ツールを使用していません。
+      </p>
+    </section>
 
+    <section class="card">
+      <h2>プライバシーポリシーの変更について</h2>
+      <p>
+        本ポリシーの内容は、必要に応じて予告なく変更される場合があります。
+        変更後のプライバシーポリシーは、本ページにて公開します。
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © FumiApp
+  </footer>
 </body>
 </html>
