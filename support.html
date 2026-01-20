@@ -11,9 +11,14 @@
       --text:#0E1B2A;
       --muted:#5A6676;
       --primary:#173A57;
-      --accent1:#2E5F82;
-      --accent2:#C47A6B;
-      --accent3:#D59A32;
+
+      /* Brand gradient (My Color Map) */
+      --g1:#EE9977;
+      --g2:#EE88AA;
+      --g3:#BB77CC;
+      --g4:#7788CC;
+      --g5:#5599DD;
+
       --border:rgba(14,27,42,.10);
       --shadow:0 12px 30px rgba(14,27,42,.08);
       --radius:18px;
@@ -24,9 +29,9 @@
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
       color:var(--text);
       background:
-        radial-gradient(900px 600px at 10% 10%, rgba(46,95,130,.12), transparent 60%),
-        radial-gradient(900px 600px at 90% 15%, rgba(196,122,107,.14), transparent 55%),
-        radial-gradient(900px 600px at 92% 92%, rgba(213,154,50,.16), transparent 55%),
+        radial-gradient(900px 600px at 10% 10%, rgba(85,153,221,.12), transparent 60%),
+        radial-gradient(900px 600px at 90% 15%, rgba(238,136,170,.14), transparent 55%),
+        radial-gradient(900px 600px at 92% 92%, rgba(187,119,204,.16), transparent 55%),
         var(--bg);
       line-height:1.75;
     }
@@ -46,7 +51,13 @@
     }
     .dot{
       width:10px;height:10px;border-radius:999px;
-      background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+      background: linear-gradient(135deg,
+        var(--g1) 0%,
+        var(--g2) 20%,
+        var(--g3) 45%,
+        var(--g4) 68%,
+        var(--g5) 100%
+      );
     }
     h1{
       margin:14px 0 6px;
@@ -65,8 +76,6 @@
     }
     h2{font-size:16px; margin:0 0 10px; color:var(--primary);}
     h3{font-size:14px; margin:18px 0 8px; color:var(--primary);}
-    ul{margin:8px 0 0 18px; padding:0;}
-    li{margin:6px 0;}
     a{color:var(--primary); text-decoration:none;}
     a:hover{text-decoration:underline;}
     .note{color:var(--muted); font-size:13px;}
@@ -125,7 +134,7 @@
       </p>
       <p>
         メールでのお問い合わせをご希望の場合は、以下の宛先までご連絡ください。<br>
-        宛先：support@example.com
+        宛先：mik0313245@gmail.com
       </p>
       <p class="note">
         ※すべての内容に目を通していますが、個別の返信は行えない場合があります。あらかじめご了承ください。
@@ -168,7 +177,5 @@
   </main>
 
   <footer>
-    © My Color Map
+    © FumiApp
   </footer>
-</body>
-</html>
